@@ -42,6 +42,7 @@ define Package/knot-resolver
     +libstdcpp \
     +libnghttp2 \
     +lmdb \
+    +luajit \
     PACKAGE_knot-resolver_dnstap:libfstrm \
     PACKAGE_knot-resolver_dnstap:libprotobuf-c
   USERID:=kresd=3536:kresd=3536
@@ -61,7 +62,6 @@ MESON_ARGS+= \
 	-Dcapng=disabled \
 	-Dclient=disabled \
 	-Dconfig_tests=disabled \
-	-Ddnstap=disabled \
 	-Ddoc=disabled \
 	-Dinstall_kresd_conf=disabled \
 	-Dinstall_root_keys=disabled \
